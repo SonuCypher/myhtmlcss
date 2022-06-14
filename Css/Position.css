@@ -1,0 +1,35 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(247, 255, 4);
+    display: inline-block;
+    border:2px solid black;
+    margin:10px;
+    display: inline-block;
+    
+}
+.middle{
+    background-color: blueviolet;
+}
+#relative .middle{
+    position: relative; 
+    left:300px;
+}
+#absolute{
+    position: relative;
+}
+#absolute .middle{
+    position: absolute;
+   left:300px;
+}
+#middle{
+    background-color: blue;
+    position:-webkit-sticky;
+    position:sticky;
+    top:20px;
+}
+h3{
+    position:-webkit-sticky;
+    position: sticky;
+    top:20px;
+}

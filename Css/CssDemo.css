@@ -1,0 +1,12 @@
+h1{
+    color:rgb(3, 58, 4);
+    text-align: center;
+    font-weight: bolder;
+    text-decoration:plum underline dashed;
+    letter-spacing: 15px;
+    font-family: monospace;
+    font-size:40px;
+}
+p{
+    line-height:2;
+}
