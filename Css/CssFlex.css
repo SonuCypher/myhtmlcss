@@ -14,20 +14,20 @@ h1{
     flex-direction:row;
     justify-content:flex-start;
     align-items: flex-start;
-    /* flex-wrap:wrap ; */
-    /* align-content: ; */
+    /*flex-wrap:wrap ; 
+     align-content: ;*/
     
 }
 #container div{
-    width: 500px; 
-    height:500px;
+    width: 100px; 
+    height:100px;
     flex-basis: 200px;
 
 }
 /* div:nth-of-type(2){ 
     align-self: center;
 }*/
-div:nth-of-type(1){
+/* div:nth-of-type(1){
     flex-grow: 1;
     flex-shrink: 3;
-}
+} */
