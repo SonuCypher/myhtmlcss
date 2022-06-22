@@ -20,7 +20,7 @@ while (input !== 'quit' && input !== 'q') {
         const index = parseInt(prompt('enter the index to delete'))
         if (!Number.isNaN(index)) {
             const deleted = todos.splice(index, 1)
-            console.log('ok,deleted ' + deleted[index])
+            console.log('ok,deleted ' + deleted[0])
         }
     } else {
         console.log('Unknown index')
