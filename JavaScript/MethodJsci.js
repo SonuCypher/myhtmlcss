@@ -6,5 +6,5 @@ const person = {
     }
 }
 person.fullName()
-person.last = 'plant';
+person.last = 'plant'
 person.fullName()
