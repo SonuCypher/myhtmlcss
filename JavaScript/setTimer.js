@@ -10,4 +10,4 @@
     console.log(Math.random())
     console.log("hi")
 },2000)
-// use clearInterval to clear the timer
+// use clearInterval(id) to clear the timer
