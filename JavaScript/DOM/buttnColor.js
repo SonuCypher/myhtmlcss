@@ -8,19 +8,29 @@ const newColor = function(){
 const buttons = document.querySelectorAll('button')
 
 
+// for (let button of buttons){
+// button.addEventListener('click',function () {
+//     button.style.backgroundColor = newColor()
+//     button.style.color = newColor()
+// })
+// }
+
+// const h1s = document.querySelectorAll('h1')
+// for (let h1 of h1s){
+//     h1.addEventListener('click',function () {
+//         h1.style.backgroundColor = newColor()
+//         h1.style.color = newColor()
+//     })
+// }
 for (let button of buttons){
-button.addEventListener('click',function () {
-    button.style.backgroundColor = newColor()
-    button.style.color = newColor()
-})
+    button.addEventListener('click',styleB)
+    }
+    
+    const h1s = document.querySelectorAll('h1')
+    for (let h1 of h1s){
+        h1.addEventListener('click',styleB)
+    }
+function styleB (){
+    this.style.backgroundColor = newColor()
+    this.style.color = newColor()
 }
-
-const h1s = document.querySelectorAll('h1')
-for (let h1 of h1s){
-    h1.addEventListener('click',function () {
-        h1.style.backgroundColor = newColor()
-        h1.style.color = newColor()
-    })
-
-}
-
