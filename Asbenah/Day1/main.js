@@ -5,3 +5,5 @@ comments can make code readable
 easy to reuse and informative
 */
 
+console.log(myAge)
+console.log(yourAge)
