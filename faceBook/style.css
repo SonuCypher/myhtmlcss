@@ -9,11 +9,11 @@ header{
 .logo-text{
     color:white;
     text-decoration:none;
-    font-size: xx-large;
+    font-size: 40px;
     font-weight: bold;
-    margin-left: 100px;
-  
-    
+    margin-left: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 22px;
 }
 body{
     margin: 0px;
@@ -26,5 +26,20 @@ body{
 }
 .login{
     width:50%;
+    display: flex;
     /* background: aqua; */
+    padding-top: 14px;
+    padding-left: 194px;
 }
+input{
+    align-self: start;
+}
+.col {
+    flex: 1 1 auto;
+  }
+  .line-break {
+     flex-basis: 2%; 
+    /* width: 10px;  */
+    /* height: 0px; */
+    overflow: hidden;
+  }
