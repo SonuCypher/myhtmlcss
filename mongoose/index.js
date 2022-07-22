@@ -22,4 +22,12 @@ const mongoose= require('mongoose')
   rating:String
  })
  const Movie = mongoose.model('Movie', movieSchema)
- const amadeus = new Movie({title : 'Amadeus', year :1986, score : 9.2, rating :'R'})
+//  const amadeus = new Movie({title : 'Amadeus', year :1986, score : 9.2, rating :'R'})
+
+/*Movie.insertMany([
+   {title : 'Vikram', year :1985, score : 9.2, rating :'R'},
+   {title : 'Vaathi', year :2003, score : 9.2, rating :'E'},
+   {title : 'Varnamayiram', year :1985, score : 9.2, rating :'G'},
+   {title : 'Veer', year :1985, score : 9.2, rating :'B'},
+   {title : 'kaithi', year :1985, score : 9.2, rating :'C'}
+])*/
