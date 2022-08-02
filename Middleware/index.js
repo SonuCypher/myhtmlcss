@@ -3,10 +3,10 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 
-// app.use(morgan('tiny'))
+// app.use(morgan('dev'))
 // app.use(morgan('common'))
 
- app.use(morgan('dev'))
+ app.use(morgan('tiny'))
  app.use((req,res,next) => {
     req.requestTime = Date.now()
     console.log(req.method, req.path)
@@ -22,7 +22,8 @@ const morgan = require('morgan')
     if (password === 'password'){     
         next()
     }
-    res.send('Incorrect password')
+    // res.send('Incorrect password')
+    throw new Error('Passsword required')
  }
 
 //  app.use((req,res,next) => {
@@ -56,6 +57,9 @@ app.get('/', (req, res)=>{
     console.log(`REQUEST DATE: ${req.requestTime}`)
     res.send('HOME PAGE')
 })
+app.get('/error', (req, res)=>{
+    heaveb.fake()
+})
 
 app.get('/dogs', (req, res)=>{
     console.log(`REQUEST DATE: ${req.requestTime}`)
@@ -68,6 +72,12 @@ app.get('/secret',verifyPassword,(req, res)=>{
 
  app.use((req, res)=>{
     res.status(404).send('NOT FOUND')
+ })
+
+ app.use((err,req,res,next)=>{
+    console.log('************error************')
+    // console.log(err)
+    next(err)
  })
 
 app.listen(3000, ()=>{
